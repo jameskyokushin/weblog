@@ -1,5 +1,6 @@
 .container {
-  width: 800px;
+  width: 900px;
+  
 }
 
 body {
@@ -13,6 +14,10 @@ header {
 header img {
  padding: .3em;
  background-color: white;
+ margin-left: auto;
+ margin-right: auto;
+ width: 150px;
+
 }
 section {
   margin-top: 1em;
@@ -78,9 +83,9 @@ a.signup_button {
   margin-right: auto;
   display: block;
   text-align: center;
-  width: 190px;
+  width: 150px;
   color: #fff;
-  background: #41383C;
+  background: 	#151B54;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -91,7 +96,7 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 5px;
-  width: 800px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
