@@ -89,9 +89,7 @@ a.signup_button {
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
+  
 }
 footer {
   text-align: center;
@@ -109,3 +107,8 @@ footer img {
  width: 50px;
 }
 
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
