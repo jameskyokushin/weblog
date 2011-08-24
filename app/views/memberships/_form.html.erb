@@ -1,0 +1,22 @@
+<%= semantic_form_for @membership do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :full_name %>
+    <%= f.input :gender %>
+    <%= f.input :dojo %>
+    <%= f.input :rank %>
+    <%= f.input :date_of_birth %>
+    <%= f.input :date_started %>
+    <%= f.input :weight %>
+    <%= f.input :height %>
+    <%= f.input :email %>
+    <%= f.input :contact %>
+    <h3>Incase of Emergency Contact this Person:</h3>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :contact1 %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>

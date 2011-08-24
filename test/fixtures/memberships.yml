@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  full_name: MyString
+  gender: MyString
+  dojo: MyString
+  rank: MyString
+  date_of_birth: 2011-08-23
+  date_started: MyString
+  weight: MyString
+  height: MyString
+  email: MyString
+  contact: MyString
+  name: MyString
+  address: MyString
+  contact1: MyString
+
+two:
+  full_name: MyString
+  gender: MyString
+  dojo: MyString
+  rank: MyString
+  date_of_birth: 2011-08-23
+  date_started: MyString
+  weight: MyString
+  height: MyString
+  email: MyString
+  contact: MyString
+  name: MyString
+  address: MyString
+  contact1: MyString

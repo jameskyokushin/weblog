@@ -8,25 +8,25 @@ body {
 
 }
 header {
- padding-top: 10px;
+ padding-top: 15px;
 }
 
 header img {
- padding: .3em;
+ padding: 0em;
  background-color: white;
  margin-left: auto;
  margin-right: auto;
- width: 150px;
+ width: 180px;
 
 }
 section {
-  margin-top: 1em;
+  margin-top: .1em;
   font-size: 120%;
   padding: 20px;
   background: #fff;
 }
 section h1 {
-  font-size: 150%;
+  font-size: 200%;
 }
 
 /* LINK */
@@ -92,9 +92,9 @@ a.signup_button {
   
 }
 footer {
-  text-align: center;
+  text-align: left;
   margin-top: 5px;
-  width: 250px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -1,0 +1,32 @@
+<h1>Members List</h1>
+
+<table>
+  <tr>
+    <th>Full name</th>
+    
+    <th>Dojo</th>
+    <th>Rank</th>
+    
+    <th>Date Started</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @memberships.each do |membership| %>
+  <tr>
+    <td><%= membership.full_name %></td>
+   
+    <td><%= membership.dojo %></td>
+    <td><%= membership.rank %></td>
+    
+    <td><%= membership.date_started %></td>
+   
+    <td><%= link_to 'Show', membership %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add New Member', new_membership_path %>
