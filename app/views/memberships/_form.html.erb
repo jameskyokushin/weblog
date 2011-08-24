@@ -1,19 +1,32 @@
 <%= semantic_form_for @membership do |f| %>
   <%= f.inputs do %>
-    <%= f.input :full_name %>
-    <%= f.input :gender %>
-    <%= f.input :dojo %>
-    <%= f.input :rank %>
-    <%= f.input :date_of_birth %>
-    <%= f.input :date_started %>
-    <%= f.input :weight %>
-    <%= f.input :height %>
-    <%= f.input :email %>
-    <%= f.input :contact %>
+   
+    <%= f.input :full_name, :hint => "Surname FirstName M.I."%>
+   
+    <%= f.input :gender, :include_blank => false, :collection => [["Male", "Male"], ["Female", "Female"]] %>
+   
+    <%= f.input :dojo,:include_blank => false, :collection => [["-  Select  -"," --  "],["San Juan", "Kyokushin Honbu"],["Manila", "Kyokushin Manila"],["Pasig", "Kyokushin Pasig"],["Quezon City", "Kyokushin QC"],["Cavite", "Kyokushin Cavite"],["Las Pinas", "Kyokushin Las Pinas"],["Pasay", "Kyokushin Pasay"],["Rizal", "Kyokushin Rizal"],["Bulacan", "Kyokushin Bulacan"],["Zambales", "Kyokushin Zambales"],["Caloocan", "Kyokushin Caloocan"],["Laguna", "Kyokushin Laguna"],["Paranaque", "Kyokushin Paranaque"],["Bicol", "Kyokushin Bicol"],["Leyte", "Kyokushin Leyte"],["Samar", "Kyokushin Samar"],["Cebu", "Kyokushin Cebu"],["Iloilo", "Kyokushin Iloilo"],["Bohol", "Kyokushin Bohol"],["Antique", "Kyokushin Antique"],["Aklan", "Kyokushin Aklan"],["Cagayan", "Kyokushin Cagayan"],["Cotabato", "Kyokushin Cotabato"],["North Cotabato", "Kyokushin N.Cotabato"],["South Cotabato", "Kyokushin S.Cotabato"],["Davao", "Kyokushin Davao"],["Isabel", "Kyokushin Isabela"],["Maguindanao", "Kyokushin Maguindanao"],["Panabo", "Kyokushin Panabo"]] %>
+   
+    <%= f.input :rank, :include_blank => false,:collection => [["White Belt", "No Kyu"],["Orange Belt", "10th Kyu"],["Orange Stripe", "9th Kyu"],["Blue Belt", "8th Kyu"],["Blue Stripe", "7th Kyu"],["Yellow Belt", "6th Kyu"],["Yellow Stripe", "5th Kyu"],["Green Belt", "4th Kyu"],["Green Stripe", "3rd Kyu"],["Brown Belt", "2nd Kyu"],["Brown Stripe", "1st Kyu"],["Shodan-ho", "Shodan-ho"],["1st-dan Blackbelt", "1st-dan Blackbelt"],["2nd-dan Blackbelt", "2nd-dan Blackbelt"],["3rd-dan Blackbelt", "3rd-dan Blackbelt"],["4th-dan Blackbelt", "4th-dan Blackbelt"]] %>
+   
+    <%= f.input :date_of_birth,:include_blank => false, :start_year => 1930 %>
+    
+    <%= f.input :date_started, :hint => "Month/Year" %>
+
+    <%= f.input :weight, :hint => "please indicate if kgs or lbs"%>
+
+    <%= f.input :height, :hint => "please indicate if cm or ft"%>
+
+    <%= f.input :email, :hint => "your facebook account" %>
+
+    <%= f.input :contact, :hint => "home phone / cell phone " %>
     <h3>Incase of Emergency Contact this Person:</h3>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :contact1 %>
+
+    <%= f.input :name, :hint => "Guardian / Parents Name " %>
+
+    <%= f.input :address, :hint => "Parents address" %>
+
+    <%= f.input :contact1, :hint => "home phone / cell phone" %>
   <% end %>
 
   <%= f.buttons do %>
