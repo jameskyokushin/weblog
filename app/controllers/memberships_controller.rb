@@ -2,12 +2,7 @@ class MembershipsController < ApplicationController
   # GET /memberships
   # GET /memberships.xml
   def index
-    @memberships = Membership.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @memberships }
-    end
+    @memberships = Membership.search(params[:search])
   end
 
   # GET /memberships/1

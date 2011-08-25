@@ -1,13 +1,20 @@
-<h3><font size="6" face="Georgia"color="maroon">K</font>YOKUSHIN HONBU PHILIPPINES</h3>
 
+<% form_tag memberships_path, :method => 'get' do %>
+   <h3>
+      <font size="6" face="Georgia"color="maroon">K</font>YOKUSHIN HONBU PHILIPPINES
+        
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :full_name => nil %>
+
+   </h3>   
+    
+<% end %>
 <table>
   <tr>
     <th>ID</th>
     <th>Full name</th>
-    
     <th>Dojo</th>
     <th>Rank</th>
-    
     <th>Gender</th>
     <th></th>
     <th></th>
@@ -17,14 +24,9 @@
   <tr>
     <td><%= membership.id %></td>
     <td><%= membership.full_name %></td>
-   
     <td><%= membership.dojo %></td>
     <td><%= membership.rank %></td>
-    
     <td><%= membership.gender %></td>
- 
-    
-   
   </tr>
 <% end %>
 </table>
